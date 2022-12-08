@@ -8,3 +8,7 @@ go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest<br>
 go install github.com/lc/gau/v2/cmd/gau@latest<br>
 go install github.com/tomnomnom/gf@latest<br>
 go install github.com/tomnomnom/waybackurls@latest<br>
+
+
+# Install GCC for Win
+choco install mingw -y
