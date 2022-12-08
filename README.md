@@ -11,4 +11,4 @@ go install github.com/tomnomnom/waybackurls@latest<br>
 
 
 # Install GCC for Win
-choco install mingw -y
+https://sourceforge.net/projects/mingw/files/latest/download
