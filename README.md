@@ -1,27 +1,27 @@
 # Install golang
 ~~~
-mkdir temp<br>
-cd temp ( to the folder you created in previous step)<br>
-wget https://dl.google.com/go/go1.20.linux-amd64.tar.gz<br>
-sudo tar -xvf go1.20.linux-amd64.tar.gz<br>
-sudo mv go /usr/local<br>
-export GOROOT=/usr/local/go<br>
-export GOPATH=$HOME/go<br>
-export PATH=$GOPATH/bin:$GOROOT/bin:$PATH<br>
-source ~/.profile<br>
+mkdir temp
+cd temp ( to the folder you created in previous step)
+wget https://dl.google.com/go/go1.20.linux-amd64.tar.gz
+sudo tar -xvf go1.20.linux-amd64.tar.gz
+sudo mv go /usr/local
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+source ~/.profile
 ~~~
-<br>
+
 # all-tool
 get tool and install
 
 ```
-go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest<br>
-go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest<br>
-go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest<br>
-go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest<br>
-go install github.com/lc/gau/v2/cmd/gau@latest<br>
-go install github.com/tomnomnom/gf@latest<br>
-go install github.com/tomnomnom/waybackurls@latest<br>
+go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
+go install github.com/lc/gau/v2/cmd/gau@latest
+go install github.com/tomnomnom/gf@latest
+go install github.com/tomnomnom/waybackurls@latest
 go install -v github.com/projectdiscovery/uncover/cmd/uncover@latest
 ```
 # Install GCC for Win
