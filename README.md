@@ -1,7 +1,7 @@
 # Install golang
 ~~~
 mkdir temp
-cd temp ( to the folder you created in previous step)
+cd temp 
 wget https://dl.google.com/go/go1.20.linux-amd64.tar.gz
 sudo tar -xvf go1.20.linux-amd64.tar.gz
 sudo mv go /usr/local
