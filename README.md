@@ -23,6 +23,9 @@ go install github.com/lc/gau/v2/cmd/gau@latest
 go install github.com/tomnomnom/gf@latest
 go install github.com/tomnomnom/waybackurls@latest
 go install -v github.com/projectdiscovery/uncover/cmd/uncover@latest
+nuclei
+subfinder
+httpx
 ```
 # Install GCC for Win
 https://udomain.dl.sourceforge.net/project/mingw-w64/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/8.1.0/threads-win32/sjlj/x86_64-8.1.0-release-win32-sjlj-rt_v6-rev0.7z
