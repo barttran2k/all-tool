@@ -23,6 +23,9 @@ go install github.com/lc/gau/v2/cmd/gau@latest
 go install github.com/tomnomnom/gf@latest
 go install github.com/tomnomnom/waybackurls@latest
 go install -v github.com/projectdiscovery/uncover/cmd/uncover@latest
+go install github.com/Emoe/kxss@latest
+go install github.com/hahwul/dalfox/v2@latest
+
 nuclei
 subfinder
 httpx
