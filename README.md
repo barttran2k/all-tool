@@ -30,9 +30,10 @@ go install github.com/projectdiscovery/katana/cmd/katana@latest
 # Linux only
 cd ; sudo cp -r go/bin/* /usr/bin/
 
-nuclei
-subfinder
-httpx
+nuclei -update -ut
+subfinder -update
+httpx -update
+katana -update
 
 
 ```
