@@ -27,14 +27,12 @@ go install github.com/Emoe/kxss@latest
 go install github.com/hahwul/dalfox/v2@latest
 go install github.com/projectdiscovery/katana/cmd/katana@latest
 
-# Linux only
-cd ; sudo cp -r go/bin/* /usr/bin/
+pip install dirsearch sqlmap
 
 nuclei -update -ut
 subfinder -update
 httpx -update
 katana -update
-
 
 ```
 # Install GCC for Win
