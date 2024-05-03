@@ -2,8 +2,8 @@
 ~~~
 mkdir temp
 cd temp 
-wget https://dl.google.com/go/go1.20.linux-amd64.tar.gz
-sudo tar -xvf go1.20.linux-amd64.tar.gz
+wget https://dl.google.com/go/go1.22.linux-amd64.tar.gz
+sudo tar -xvf go1.22.linux-amd64.tar.gz
 sudo mv go /usr/local
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/go
