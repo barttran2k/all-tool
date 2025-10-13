@@ -2,8 +2,8 @@
 ~~~
 mkdir temp
 cd temp 
-wget https://go.dev/dl/go1.24.2.linux-amd64.tar.gz
-sudo tar -xvf go1.24.2.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.25.2.linux-amd64.tar.gz
+sudo tar -xvf go1.25.2.linux-amd64.tar.gz
 sudo mv go /usr/local
 echo "export GOROOT=/usr/local/go" >> ~/.bashrc
 echo "export GOPATH=$HOME/go" >> ~/.bashrc
