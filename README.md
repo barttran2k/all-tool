@@ -1,8 +1,7 @@
 # All in one
 ```
-chmod +x install-bugbounty.sh
-./install-bugbounty.sh
-source ~/.bashrc
+curl -sL https://raw.githubusercontent.com/barttran2k/all-tool/refs/heads/main/all_in_1.sh -o all_in_1.sh
+chmod +x all_in_1.sh && ./all_in_1.sh
 ```
 # Install golang
 ~~~
