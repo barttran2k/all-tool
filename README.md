@@ -1,3 +1,9 @@
+# All in one
+```
+chmod +x install-bugbounty.sh
+./install-bugbounty.sh
+source ~/.bashrc
+```
 # Install golang
 ~~~
 GO_VERSION=$(curl -s https://go.dev/VERSION?m=text | head -n1)
