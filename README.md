@@ -51,5 +51,16 @@ httpx -update
 katana -update
 
 ```
+
+# if fail pdtm
+```
+go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
+go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
+go install -v github.com/projectdiscovery/katana/cmd/katana@latest
+go install -v github.com/projectdiscovery/uncover/cmd/uncover@latest
+```
+
 # Install GCC for Win
 `[mingw64](https://github.com/gorvgoyl/MinGW64/releases)`
