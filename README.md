@@ -1,14 +1,27 @@
 # Install golang
 ~~~
-mkdir temp
-cd temp 
-wget https://go.dev/dl/go1.25.2.linux-amd64.tar.gz
-sudo tar -xvf go1.25.2.linux-amd64.tar.gz
-sudo mv go /usr/local
-echo "export GOROOT=/usr/local/go" >> ~/.bashrc
-echo "export GOPATH=$HOME/go" >> ~/.bashrc
-echo "export PATH=$GOPATH/bin:$GOROOT/bin:$PATH" >> ~/.bashrc
-source ~/.bashrc
+# Lấy phiên bản Go mới nhất
+GO_VERSION=$(curl -s https://go.dev/VERSION?m=text | head -n1)
+ARCH=$(dpkg --print-architecture)   # amd64 hoặc arm64
+echo "Đang cài $GO_VERSION ($ARCH)..."
+
+# Tải về thư mục tạm
+cd /tmp
+wget -q --show-progress "https://go.dev/dl/${GO_VERSION}.linux-${ARCH}.tar.gz"
+
+# Xoá bản cũ và giải nén trực tiếp vào /usr/local
+sudo rm -rf /usr/local/go
+sudo tar -C /usr/local -xzf "${GO_VERSION}.linux-${ARCH}.tar.gz"
+rm "${GO_VERSION}.linux-${ARCH}.tar.gz"
+
+# Thêm biến môi trường nếu chưa có (dùng nháy đơn để không bị expand sớm)
+if ! grep -q 'GOROOT=/usr/local/go' ~/.bashrc; then
+  echo 'export GOROOT=/usr/local/go' >> ~/.bashrc
+  echo 'export GOPATH=$HOME/go' >> ~/.bashrc
+  echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> ~/.bashrc
+fi
+
+/usr/local/go/bin/go version
 ~~~
 
 # all-tool
