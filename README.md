@@ -17,6 +17,7 @@ if ! grep -q 'GOROOT=/usr/local/go' ~/.bashrc; then
 fi
 
 /usr/local/go/bin/go version
+sudo apt install -y python3-pip
 ~~~
 
 # all-tool
